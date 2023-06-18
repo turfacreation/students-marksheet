@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Data Types</title>
+</head>
+<body>
+
+    <!--<h1>জাভাস্ক্রিপ্ট মুলত তথ্য Data কে কয়েক ভাবে ভাগ করেছে</h1> 
+    <h3>Number, String, Object, Booleam, Array</h3>
+    <br>-->
+   
+    <hr>
+<!--
+    <script>
+        let product_price=10000;
+        let product_qut=2;
+        let product_name=("TV");
+
+        let total_price=product_price*product_qut;
+
+
+        let per_paymet=("5");
+
+        let discount_rate=2;
+
+        document.write("Product Price: " + product_price+"<br>");
+        document.write("Product Qualnity : " + product_qut+"<br>");
+        document.write("Total Price: " + total_price+"<br>");
+        document.write("Payment Procedure By Installment: " + total_price/per_paymet);
+        document.write("<br>Total Price with Discount 10% :" + (total_price*discount_rate/100));
+    </script>
+
+-->
+
+<!--
+<p>
+    Product Name = AC <br>
+    Product Qualnity = 2 <br>
+    Per Product Price = 10,000 <br>
+    Discount 10 % On total Sale   <br>
+    Installmetn per term = 4 <br>
+
+   <h4>Please Calculate (1*)Total Product Price (2*) Total Discount (10%) on Total Sale (3*) Total Product Price on Total sell With Discount 10% (4*) Paymet Per Installment.</h4>   
+</p>
+
+<hr>
+<h3>The Result is </h3>
+
+<script>
+    let product_name=("AC");
+    let procuct_qut=2;
+    let product_price=10000;
+    let discount_rate_on_total_sell=10;
+    let payment_by_installment=4;
+
+    let total_proce=(product_price*procuct_qut);
+    let total_discount=((total_proce*discount_rate_on_total_sell)/100);
+    let totla_porduct_price_wirh_discount=(total_proce-total_discount);
+
+
+
+    document.write("Total Product Price = "+total_proce);
+    document.write("<br> Total Discount (10%) on Total Sale = "+total_discount);
+    document.write("<br> Total  Product Price on Total sell With Discount (10%) =" + totla_porduct_price_wirh_discount);
+    document.write("<br> Paymet Per Installment = "+ totla_porduct_price_wirh_discount/payment_by_installment);
+
+</script>
+-->
+<!--
+<form action="" method="post" enctype="multipart/form-data">
+    <label for="productprice">Porduct Price</label>
+    <input type="text" name="productprice" id="productprice" value="3000">Taka<br><br>
+
+    <label for="product_qut">Product_Quantity</label>
+    <input type="text" name="productqut" id="productqut" value="0"  onchange="productPriceCalculation()">Pices<br><br>
+
+    <label for="total_price">Total Price</label>
+    <input type="text" name="totalprice" id="totalprice" value="0"> Taka<br><br>
+
+    <label for="discountrate">Discount Rate 10% on Total Sale:</label>
+    <input type="text" name="discountrate" id="discountrate" value="0">Taka<br><br>
+
+    <label for="afterdiscounttotalsale">After Discount Total Sale: </label>
+    <input type="text" name="afterdiscounttotalsale" id="afterdiscounttotalsale" value="0">Taka<br><br>
+
+
+    <label for="installmentpay">You Should to Pay By <b>4 Month </b>Basis Instllment Then You Should be Pay per Month </label>
+    <input type="text" name="installmentpay" id="installmentpay" value="0">Taka
+
+
+</form>
+
+-->
+<!--
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<form >
+    <label for="username">Please enter an user name</label>
+    <input type="text" name="username" id="username" value="" onkeypress="return AvoidSpace(event)>
+
+    <p onclick="AvoidSpace()">save</p>
+</form>
+
+<span id="show"></span>
+
+
+<script>
+    function AvoidSpace(event){
+        var k = event ? event.which : window.event.keyCode;
+    if (k == 32) return false;
+
+        let username=document.getElementById("username").value;
+
+       // alert(username); //Its Working
+
+     let removespace =  document.getElementById("show").innerHTML = username;
+
+        document.getElementById("").innerHTML = removespace;
+    }
+</script>
+
+-->
+
+<center><h2>Remove space from input field</h2></center> 
+
+<script>
+function AvoidSpace(event) {
+    var k = event ? event.which : window.event.keyCode;
+    if (k == 32) return false;
+   
+    let usernameform = document.getElementById("username").value;
+    document.getElementById("show").innerHTML=usernameform;
+}
+</script>
+<!-- function is end
+ -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- jquery library link -->
+<center>
+    <form>
+        <label for="username">Input Your User Name</label>
+        <input type="text" name="username" id="username" onkeypress="return AvoidSpace(event);">
+        
+        <p onclick="AvoidSpace(event)">Save</p>
+        </form>
+        <!-- input filed -->
+        <span style="color: blueviolet; font-size: 22px;" id="show"></span>
+</center>
+<hr>
+<!-- id where showing this data -->
+<center>
+<h2><a style="text-decoration: none; color: rgb(255, 255, 255); background-color: rgb(32, 32, 32); padding: 10px 10px;" href="template-part/form.html">Please go to Students Marksheet Generate Page</a></h2>
+</center>
+</body>
+</html>

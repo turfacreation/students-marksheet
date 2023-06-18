@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+<body>
+<header>
+
+</header>
+
+<main>
+    <section class="markgenerate">
+        <div class="wrapper-markgenerate container">
+            <div class="markgenerateheading">
+                <h2>Please Input Subject Wise Marks</h2>
+                <h3>Subject Wise Full Marks - 100</h3>
+            </div>
+            
+            <form class="marksinput" >
+                <table>
+                    <tr>
+                        <td><label for="bangla">Bangla</label></td>
+                        <td><input type="number" name="bangla" id="bangla" value="79" min="1" max="100"></td>
+                    </tr>
+        
+                    <tr>
+                        <td><label for="english">English</label></td>
+                        <td><input type="number" name="english" id="english" value="99"></td>
+                    </tr>
+        
+                    <tr>
+                        <td><label for="mathhematics">Mathematics</label></td>
+                        <td><input type="number" name="mathhematics" id="mathhematics" value="100"></td>
+                    </tr>
+        
+                    <tr>
+                        <td><label for="religion">Religion</label></td>
+                        <td><input type="number" name="religion" id="religion" value="82"></td>
+                    </tr>
+        
+                    <tr>
+                        <td><label for="socialscience">Social Science</label></td>
+                        <td><input type="number" name="socialscience" id="socialscience" value="65"></td>
+                    </tr>
+        
+                    <tr>
+                        <td><label for="science">Science</label></td>
+                        <td><input type="number" name="science" id="science" value="55"></td>
+                    </tr>
+        
+                    <tr>
+                        <td><label for="ict">ICT</label></td>
+                        <td><input type="number" name="ict" id="ict" value="45"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><p class="generate_grade" onclick="generateGrade()">Generate Marks</p></td>
+                    </tr>
+                </table>
+        
+                
+            </form>
+        
+        </div>
+        
+    </section>
+
+
+
+
+
+
+    <section class="viewresult">
+        <div class="wrapper-viewresult container">
+            <table class="viewresult">
+                <tr>
+                    <td><label for="bangla">Bangla</label></td>
+                    <td id="banglagrade"></td>
+                    <td id="banglamarks"></td>
+                </tr>
+            
+                <tr>
+                    <td><label for="english">English</label></td>
+                    <td id="englishgrade"></td>
+                    <td id="englishmarks"></td>
+                </tr>
+            
+            
+                <tr>
+                    <td><label for="mathhematics">Mathematics</label></td>
+                    <td id="mathematicsgrade"></td>
+                    <td id="mathematicsmarks"></td>
+                </tr>
+            
+            
+                <tr>
+                    <td><label for="religion">Religion</label></td>
+                    <td id="religiongrade"></td>
+                    <td id="religionmarks"></td>
+                </tr>
+            
+            
+                <tr>
+                    <td><label for="socialscience">Social Science</label></td>
+                    <td id="socialsciencegrade"></td>
+                    <td id="socialsciencemarks"></td>
+                </tr>
+            
+            
+                <tr>
+                    <td><label for="science">Science</label></td>
+                    <td id="sciencegrade"></td>
+                    <td id="sciencemarks"></td>
+                </tr>
+            
+            
+                <tr>
+                    <td><label for="ict">ICT</label></td>
+                    <td id="ictgrade"></td>
+                    <td id="ictmarks"></td>
+                </tr>
+            
+            
+                <tr>
+                    <td colspan="2"><label for="ict">Total Marks</label></td>
+                    
+                    <td id="tomarks"></td>
+                </tr>
+            
+            
+                <tr>
+                    <td colspan="2"> <label for="ict">Average Marks</label></td>
+                  
+                    <td id="avgmarks"></td>
+                </tr>
+            
+            
+                <tr>
+                    <td > <label for="ict">Your Grade</label></td>
+                  
+                    <td colspan="2" id="avggrade"></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</main>
+
+
+
+
+
+<!-- view -->
+
+
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
